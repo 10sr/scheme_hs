@@ -1,8 +1,9 @@
 targets = main
 
 ghc = ghc
+flags = -package parsec
 
 all: $(targets)
 
 $(targets): %: %.hs
-	$(ghc) -o $@ --make $<
+	$(ghc) $(flags) -o $@ --make $<
