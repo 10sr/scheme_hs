@@ -1,7 +1,7 @@
 targets = main
 
 ghc = ghc
-flags = -package parsec
+flags = -package parsec --make
 
 all: $(targets)
 
